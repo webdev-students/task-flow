@@ -1,0 +1,32 @@
+@import 'variables.css';
+
+@media (max-width: 500px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hamburger,
+  .menu-open {
+    display: block;
+  }
+  .main-menu,
+  .logins {
+    display: none;
+  }
+}
+
+/* TABLET */
+@media (min-width: 500px) and (max-width: 704px) {
+  h2 {
+    font-size: 0.9rem;
+  }
+  .main-menu {
+    display: none;
+  }
+  .hamburger,
+  .menu-open {
+    display: block;
+  }
+}

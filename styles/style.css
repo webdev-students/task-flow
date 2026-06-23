@@ -1,0 +1,27 @@
+@import 'variables.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Inter', 'Arial', 'sans-serif';
+}
+
+.navbar {
+  height: 10vh;
+  background: var(--bg-light);
+  padding: 10px 20px;
+  border-bottom: 1.2px solid #ccc;
+  position: sticky;
+  top: 0;
+}
+
+.hamburger,
+.menu-open,
+.menu-close {
+  display: none;
+}

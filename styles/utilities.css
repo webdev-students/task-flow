@@ -1,0 +1,64 @@
+@import 'variables.css';
+
+.border {
+  border: 3px solid #ccc;
+}
+.border-r-sm {
+  border: 3px solid #ccc;
+  border-radius: 10px;
+}
+.border-r-md {
+  border: 3px solid #ccc;
+  border-radius: 20px;
+}
+.box-shadow-md {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.btn {
+  padding: 0.4rem 1.4rem;
+  border: none;
+  outline: none;
+  color: var(--text-gray);
+  border-radius: 0.8rem;
+  font-size: 0.8rem;
+}
+.btn-md {
+  padding: 0.4rem 2.6rem;
+}
+.btn-lg {
+  padding: 0.4rem 3.4rem;
+}
+.btn-primary {
+  background-color: var(--primary-color);
+}
+.btn-secondary-light {
+  background: transparent;
+  border: 1px solid #ccc;
+  backdrop-filter: blur(10px);
+}
+.btn-secondary-dark {
+  background: var(--text-dark);
+  color: var(--text-light);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.container-no-gap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-flex-b {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+.menu-item {
+  padding: 0.4rem 0.8rem;
+  color: var(--text-gray);
+  font-size: 0.8rem;
+}
