@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup | TaskFlow</title>
+    <link rel="icon" href="assets/icons/taskflow.png" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/variables.css" />
+    <link rel="stylesheet" href="../styles/utilities.css" />
+    <link rel="stylesheet" href="../styles/media-queries.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+      .signup-page {
+        min-height: calc(100vh - 80px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem 1.5rem;
+      }
+
+      .signup-container {
+        width: 100%;
+        max-width: 500px;
+      }
+
+      .signup-content {
+        background: #ffffff;
+        border: 1px solid #e5e7eb;
+        border-radius: 24px;
+        padding: 2.5rem;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+      }
+
+      .signup-header {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      .signup-badge {
+        display: inline-block;
+        padding: 0.4rem 0.9rem;
+        background: rgba(59, 130, 246, 0.1);
+        color: #2563eb;
+        border-radius: 999px;
+        font-size: 0.875rem;
+        font-weight: 600;
+      }
+
+      .signup-header h1 {
+        margin: 1rem 0 0.75rem;
+        font-size: clamp(2rem, 4vw, 2.75rem);
+        line-height: 1.2;
+      }
+
+      .signup-header p {
+        color: #6b7280;
+        line-height: 1.7;
+      }
+
+      .signup-form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+      }
+
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .form-group label {
+        font-weight: 600;
+        font-size: 0.95rem;
+      }
+
+      .form-group input {
+        width: 100%;
+        padding: 0.9rem 1rem;
+        border: 1px solid #d1d5db;
+        border-radius: 12px;
+        outline: none;
+        transition: 0.3s;
+        font-size: 1rem;
+        box-sizing: border-box;
+      }
+
+      .form-group input:focus {
+        border-color: #2563eb;
+      }
+
+      .checkbox-group {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.75rem;
+        color: #6b7280;
+        font-size: 0.9rem;
+      }
+
+      .signup-btn {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .divider {
+        position: relative;
+        text-align: center;
+        margin: 0.5rem 0;
+      }
+
+      .divider::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        border-top: 1px solid #e5e7eb;
+      }
+
+      .divider span {
+        position: relative;
+        background: #fff;
+        padding: 0 1rem;
+        color: #6b7280;
+      }
+
+      .social-btn {
+        width: 100%;
+        padding: 0.95rem;
+        border: 1px solid #d1d5db;
+        background: #fff;
+        border-radius: 12px;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: 500;
+      }
+
+      .social-btn:hover {
+        background: #f9fafb;
+      }
+
+      .signin-link {
+        text-align: center;
+        margin-top: 1.5rem;
+        color: #6b7280;
+      }
+
+      .signin-link a {
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      @media (max-width: 576px) {
+        .signup-content {
+          padding: 1.5rem;
+          border-radius: 18px;
+        }
+
+        .signup-header h1 {
+          font-size: 1.8rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container-flex-b navbar">
+        <div class="logo container">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-sticky-note-plus-icon lucide-sticky-note-plus"
+          >
+            <path d="M15 3v5a1 1 0 0 0 1 1h5" />
+            <path d="M18 15v6" />
+            <path
+              d="M21 12.356V9a2.4 2.4 0 0 0-.706-1.706l-3.588-3.588A2.4 2.4 0 0 0 15 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7.355"
+            />
+            <path d="M21 18h-6" />
+          </svg>
+          <h2>TaskFlow</h2>
+        </div>
+        <nav class="main-menu">
+          <a href="pages/product.html" class="menu-item">Product</a>
+          <a href="pages/solutions.html" class="menu-item">Solutions</a>
+          <a href="pages/pricing.html" class="menu-item">Pricing</a>
+          <a href="pages/resources.html" class="menu-item">Resources</a>
+        </nav>
+        <div class="container-flex-b logins">
+          <a href="pages/sign-in.html" class="menu-item">Log in</a>
+          <a href="pages/sign-up.html" class="btn btn-primary">Get Started</a>
+        </div>
+        <div class="hamburger">
+          <span class="menu-open">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-menu-icon lucide-menu"
+            >
+              <path d="M4 5h16" />
+              <path d="M4 12h16" />
+              <path d="M4 19h16" />
+            </svg>
+          </span>
+          <span class="menu-close">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-x-icon lucide-x"
+            >
+              <path d="M18 6 6 18" />
+              <path d="m6 6 12 12" />
+            </svg>
+          </span>
+        </div>
+      </div>
+    </header>
+    <main class="signup-page">
+      <section class="signup-container">
+        <div class="signup-content">
+          <div class="signup-header">
+            <span class="signup-badge">Get Started</span>
+            <h1>Create Your Account</h1>
+            <p>
+              Organize tasks, collaborate with your team, and stay productive
+              with TaskFlow.
+            </p>
+          </div>
+
+          <form class="signup-form">
+            <div class="form-group">
+              <label for="fullname">Full Name</label>
+              <input
+                type="text"
+                id="fullname"
+                placeholder="Enter your full name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email address"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                placeholder="Create a password"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="confirm-password">Confirm Password</label>
+              <input
+                type="password"
+                id="confirm-password"
+                placeholder="Confirm your password"
+              />
+            </div>
+
+            <div class="checkbox-group">
+              <input type="checkbox" id="terms" />
+              <label for="terms">
+                I agree to the Terms of Service and Privacy Policy
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary signup-btn">
+              Create Account
+            </button>
+
+            <div class="divider">
+              <span>or</span>
+            </div>
+
+            <button type="button" class="social-btn">
+              Continue with Google
+            </button>
+          </form>
+
+          <p class="signin-link">
+            Already have an account?
+            <a href="sign-in.html">Sign In</a>
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
