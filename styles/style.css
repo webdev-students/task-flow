@@ -6,11 +6,17 @@
   box-sizing: border-box;
   text-decoration: none;
 }
-
+img {
+  width: 100%;
+}
 body {
   font-family: 'Inter', 'Arial', 'sans-serif';
 }
-
+header {
+  height: 10vh;
+  position: sticky;
+  top: 0;
+}
 .navbar {
   height: 10vh;
   background: var(--bg-light);
@@ -19,9 +25,37 @@ body {
   position: sticky;
   top: 0;
 }
-
 .hamburger,
 .menu-open,
 .menu-close {
   display: none;
+}
+.hero {
+  height: 100vh;
+  background: #ccc;
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem;
+}
+.hero-cta {
+  display: flex;
+}
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.hero-left h2 {
+  max-width: 500px;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 3.3rem;
+}
+.hero-right img {
+  width: 500px;
+  border-radius: 10px;
+}
+.hero p {
+  max-width: 35rem;
+  color: var(--text-gray);
 }
