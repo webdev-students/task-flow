@@ -26,6 +26,38 @@
   .hero-left h2 {
     font-size: 2.5rem;
   }
+  .mobile-menu {
+    height: 90vh;
+  }
+  .mobile-menu a {
+    font-size: 2rem;
+  }
+  .main-menu-nav {
+    height: 70vh;
+  }
+  .mobile-logins {
+    height: 20vh;
+  }
+  .main-menu-nav,
+  .mobile-logins {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .main-menu-nav a,
+  .mobile-logins a {
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 20px;
+  }
+  .mobile-logins {
+    flex-direction: row;
+  }
+  .mobile-logins a {
+    font-size: 1.5rem;
+  }
 }
 
 /* TABLET */

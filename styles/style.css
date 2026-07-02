@@ -60,3 +60,6 @@ header {
   max-width: 35rem;
   color: var(--text-gray);
 }
+.mobile-menu {
+  display: none;
+}
