@@ -33,7 +33,7 @@ header {
 }
 .hero {
   height: 100vh;
-  background: #ccc;
+  background: #f0f0f0;
   display: flex;
   justify-content: space-around;
   padding: 3rem;
@@ -62,4 +62,44 @@ header {
 }
 .mobile-menu {
   display: none;
+}
+.data-section {
+  padding: 5rem;
+}
+.data-section p {
+  font-size: 0.8rem;
+  color: #414141;
+}
+.data-info img {
+  width: 400px;
+  height: 200px;
+  border-radius: 20px;
+}
+.data-section-top {
+  align-items: center;
+}
+.data-info {
+  background: #f8f8f6;
+  padding: 2rem;
+  border-radius: 20px;
+}
+.data-info p {
+  font-size: 0.7rem;
+  max-width: 400px;
+}
+.data-info h2 {
+  font-size: 1.2rem;
+}
+
+.data-section-top,
+.data-section-middle,
+.data-info {
+  gap: 10px;
+}
+.data-section {
+  gap: 5rem;
+}
+.data-section-middle {
+  justify-content: center;
+  gap: 20px;
 }
